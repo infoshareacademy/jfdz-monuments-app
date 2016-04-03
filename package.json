@@ -1,0 +1,27 @@
+{
+  "name": "jfdz-monuments-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infoshareacademy/jfdz-monuments-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infoshareacademy/jfdz-monuments-app/issues"
+  },
+  "homepage": "https://github.com/infoshareacademy/jfdz-monuments-app#readme",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-jade": "^1.1.0"
+  }
+}
