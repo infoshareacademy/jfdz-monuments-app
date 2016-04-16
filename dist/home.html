@@ -12,11 +12,13 @@
       <script src="../node_modules/angular/angular.min.js"></script>
       <script src="../src/js/test.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/boot.css">
+
   </head>
   <body>
     <div ng-controller ="HomeCtrl">
         <p>Witaj {{name}}!</p>
-    </div>
+        <div ng-include="'zbootsrpa.html'"></div>
 
   </body>
 </html>
