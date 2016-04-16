@@ -28,8 +28,7 @@ gulp.task('templates:watch', ['templates'], function () {
 
 gulp.task('sass', function () {
     return gulp.src('./src/sass/**/*')
-        .pipe(sourcemaps.init())
-        .pipe(sourcemaps.write())
+        .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./dist/css'));
 });
 
