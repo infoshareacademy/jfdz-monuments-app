@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 <script src = "../app/assets/js/maps_search.js"></script>
 <script src = "css/maps_search.css"></script>
 <head>
 
-    <div class="container" ng-app="myApp">
-        <div class="row" ng-controller="mapCtrl">
-            <div class="col-sm-4">
-                <div id="map"></div>
-            </div>
-            <div class="col-sm-8">
-                <h2>Google Maps AngularJS</h2>
-                <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
-                    <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
-                </div>
-            </div>
-
-        </div>
-    </div><!--/container-->
 </head>
 <body>
 
+<div class="container" ng-app="myApp">
+    <div class="row" ng-controller="mapCtrl">
+        <div class="col-sm-4">
+            <div id="map"></div>
+        </div>
+        <div class="col-sm-8">
+            <h2>Google Maps AngularJS</h2>
+            <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+                <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+            </div>
+        </div>
+
+    </div>
+</div><!--/container-->
 </body>
 </html>
