@@ -1,4 +1,3 @@
-
 //Data
 var cities = [
     {
@@ -33,12 +32,8 @@ var cities = [
     }
 ];
 
-
-
 var myApp = angular.module('myApp', []);
-//angular.module('app', []);
 function mapCtrl($scope, $http){
-
 
     $scope.markers = [
         {
@@ -84,8 +79,5 @@ function mapCtrl($scope, $http){
         google.maps.event.trigger(selectedMarker, 'click');
     }
 }
-
-myApp.controller('mapCtrl', mapCtrl );
-
 
 //$(document).ready(function() {});

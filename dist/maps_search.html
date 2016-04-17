@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-<script src = "../app/assets/js/maps_search.js"></script>
-<script src = "css/maps_search.css"></script>
+<html>
 <head>
+    <script
+            src="http://maps.googleapis.com/maps/api/js">
+    </script>
 
+    <script>
+        var myCenter=new google.maps.LatLng(51.508742,-0.120850);
+
+        function initialize()
+        {
+            var mapProp = {
+                center:myCenter,
+                zoom:5,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+            var marker=new google.maps.Marker({
+                position:myCenter,
+            });
+
+            marker.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
+
 <body>
-
-<div class="container" ng-app="myApp">
-    <div class="row" ng-controller="mapCtrl">
-        <div class="col-sm-4">
-            <div id="map"></div>
-        </div>
-        <div class="col-sm-8">
-            <h2>Google Maps AngularJS</h2>
-            <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
-                <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
-            </div>
-        </div>
-
-    </div>
-</div><!--/container-->
+<div id="googleMap" style="width:500px;height:380px;"></div>
 </body>
 </html>
