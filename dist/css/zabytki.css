@@ -1,0 +1,11 @@
+.opis_zabytku .image {
+    width: 250px;
+    height: 200px;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+.naglowek {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    color: RGBa(255, 255, 255, 0.8);
+}
