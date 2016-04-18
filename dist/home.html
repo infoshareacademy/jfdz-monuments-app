@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My website</title>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+      <script src="../node_modules/angular/angular.min.js"></script>
+      <script src="../src/js/test.js"></script>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div class="container">
-      <div class="pierwszyDiv">
-        <div class="klasaTest">Test</div>
-        <div class="trlalaaaaaa">
-          <!--include wycieczka.jade-->
-        </div>
-      </div>
+    <div ng-controller ="HomeCtrl">
+        <p>Witaj {{name}}!</p>
     </div>
-    <!--script(src='js/jquery.js')-->
-    <!--script(src='js/main.js')-->
+
   </body>
 </html>
