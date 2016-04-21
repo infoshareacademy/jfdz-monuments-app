@@ -1,2 +1,13 @@
 body {
   color: green; }
+
+.zabytek {
+  background-color: sandybrown;
+  color: black;
+  border: 3px dotted black;
+  height: 300px;
+  width: 300px;
+  font-size: 10px;
+  position: absolute;
+  top: 10px;
+  left: 600px; }
