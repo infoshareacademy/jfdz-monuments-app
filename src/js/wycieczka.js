@@ -20,12 +20,12 @@ $(document).ready(function () {
 
 
 var model = {monuments:
-    [{monument: "Żuraw"},
-    {monument: "Stocznia Gdańska"},
-    {monument: "Dwór Artusa"},
-    {monument: "Fontanna Neptuna"},
-    {monument: "Gdański Dworzec"},
-    {monument: "Bazylika Mariacka"}]};
+    [{name: "Żuraw"},
+    {name: "Stocznia Gdańska"},
+    {name: "Dwór Artusa"},
+    {name: "Fontanna Neptuna"},
+    {name: "Gdański Dworzec"},
+    {name: "Bazylika Mariacka"}]};
 
 var touristApp = angular.module("touristApp", []);
 touristApp.controller("touristCtrl", function ($scope) {
