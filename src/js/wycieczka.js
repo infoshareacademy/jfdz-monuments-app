@@ -18,15 +18,16 @@ $(document).ready(function () {
 
 //angular mvc dla planu wycieczki
 
-var myApp = angular.module("touristApp", []);
 
-var model = [{monument: "Żuraw"},
+var model = {monuments:
+    [{monument: "Żuraw"},
     {monument: "Stocznia Gdańska"},
     {monument: "Dwór Artusa"},
-    {monument: "Stocznia Gdańska"},
+    {monument: "Fontanna Neptuna"},
     {monument: "Gdański Dworzec"},
-    {monument: "Bazylika Mariacka"}];
+    {monument: "Bazylika Mariacka"}]};
 
+var touristApp = angular.module("touristApp", []);
 touristApp.controller("touristCtrl", function ($scope) {
     $scope.todo = model;
-})
+});
