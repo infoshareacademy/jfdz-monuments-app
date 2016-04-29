@@ -1,5 +1,6 @@
 $tło: green;
 
+
 body {
  color: $tło;
 
@@ -27,4 +28,9 @@ body {
 
 .zwiedzany_zabytek2 {
  background-color: red;
+}
+
+.table-striped {
+ color: black;
+ //width: 800px;
 }

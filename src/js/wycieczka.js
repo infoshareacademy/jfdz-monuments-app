@@ -18,6 +18,7 @@ $(document).ready(function () {
 
 //angular mvc dla planu wycieczki
 
+var touristApp = angular.module("touristApp", []);
 
 var model = {monuments:
     [{name: "Żuraw"},
@@ -27,7 +28,6 @@ var model = {monuments:
     {name: "Gdański Dworzec"},
     {name: "Bazylika Mariacka"}]};
 
-var touristApp = angular.module("touristApp", []);
 touristApp.controller("touristCtrl", function ($scope) {
     $scope.todo = model;
 });
