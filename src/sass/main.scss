@@ -1,6 +1,32 @@
-$wycieczka-color: green;
+$wycieczka-color: grey;
 
 
 body {
   background-color: $wycieczka-color;
 }
+
+.naw {
+  background-color: coral;
+  height: 60px;
+}
+
+.mapa {
+  background-color: whitesmoke;
+  height: 500px;
+}
+
+.opis {
+  background-color: darkorchid;
+  height: 500px;
+}
+.welcome {
+  background-color: cadetblue ;
+  height: 386px;
+}
+
+.api {
+  background-color: lightskyblue;
+  height: 600px;
+}
+
+
