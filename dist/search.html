@@ -9,19 +9,21 @@
     <script src="../app/assets/js/search.js"></script>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col" ng-controller="UsersController">
-            <h2>Zabytki</h2>
-            <div class="list-group">
-                <div class="list-group-item" ng-repeat="user in users">
-                    <h3>Nazwa: {{user.name}} <small>Numer: {{user.id}}</small></h3>
-                    <h4>Opis: {{user.description}}</h4>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
+<div class="form-group" ng-controller="UsersController">
+    <label for="">Select list:</label>
+    <select class="form-control" id='' >
+        <option ng-repeat="user in users">{{user.name}}</option>
+    </select>
 </div>
+<div class="container">
+<h2>Opis zabytków</h2>
+<h4>Opis:{{user.description}}</h4>
+</div>
+
+
+
 
 </body>
 </html>
