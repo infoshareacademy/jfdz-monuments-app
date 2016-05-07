@@ -1,7 +1,7 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
-    background-image: url("");
+    background-image: url("../_img/panorama_2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 150%;
@@ -9,13 +9,13 @@ body {
     color: #a27854;
 }
 #about {
-    background-image: url("");
+    background-image: url("../_img/back_dk.jpg");
     border: solid 2px #a27854 ;
 }
 
 
 #naww {
-    background-image: url("../../_img/back_dk.jpg");
+    background-image: url("../_img/back_dk.jpg");
     border: solid 1px #a27854;
 }
 .navbar-fixed-top .nav {
@@ -47,14 +47,14 @@ body {
 
 .lewa {
     height: 550px;
-    background-image: url("../../_img/back_dk.jpg");
+    background-image: url("../_img/back_dk.jpg");
     border: solid 2px #a27854 ;
     border-right: none;
 }
 
 .prawa {
     height: 550px;
-    background-image: url("../../_img/back_dk.jpg");
+    background-image: url("../_img/back_dk.jpg");
     border: solid 2px #a27854 ;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 .api {
-    background-image: url("../../_img/back_dk.jpg");
+    background-image: url("../_img/back_dk.jpg");
     height: 603px;
     border: solid 2px #a27854 ;
     border-top: none;
@@ -93,7 +93,7 @@ body {
 }
 
 #footer {
-    background-image: url("../../_img/back_dk.jpg");
+    background-image: url("../_img/back_dk.jpg");
     height: 200px;
     border: solid 2px #a27854 ;
     border-top: none;
