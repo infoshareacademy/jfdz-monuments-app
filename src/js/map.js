@@ -24,12 +24,12 @@ function init_map(){var myOptions = {
     marker5 = new google.maps.Marker({map: map,position: new google.maps.LatLng(54.34854499999999,18.653229499999952)});
 
     //okno na mapie po klikeniciu
-    infowindow = new google.maps.InfoWindow({content:'<strong>STOCZNIA GDANSKA</strong><br>Gdansk, Jana z Kolna<br>'});
-    infowindow = new google.maps.InfoWindow({content:'<strong>ZURAW</strong><br>Gdansk, Szeroka 67/68<br>'});
-    infowindow = new google.maps.InfoWindow({content:'<strong>DWOR ARTUSA</strong><br>Gdansk, Dlugi Targ 43-44<br>'});
-    infowindow = new google.maps.InfoWindow({content:'<strong>GDANSKI DWORZEC</strong><br>Gdansk, Podwale Grodzkie 2<br>'});
-    infowindow = new google.maps.InfoWindow({content:'<strong>BAZYLIKA MARIACKA</strong><br>Gdansk, Podkramarska 5<br>'});
-    infowindow = new google.maps.InfoWindow({content:'<strong>FONTANNA NEPTUNA</strong><br>Gdansk, Dlugi Targ<br>'});
+    //infowindow = new google.maps.InfoWindow({content:'<strong>STOCZNIA GDANSKA</strong><br>Gdansk, Jana z Kolna<br>'});
+    //infowindow = new google.maps.InfoWindow({content:'<strong>ZURAW</strong><br>Gdansk, Szeroka 67/68<br>'});
+    //infowindow = new google.maps.InfoWindow({content:'<strong>DWOR ARTUSA</strong><br>Gdansk, Dlugi Targ 43-44<br>'});
+    //infowindow = new google.maps.InfoWindow({content:'<strong>GDANSKI DWORZEC</strong><br>Gdansk, Podwale Grodzkie 2<br>'});
+    //infowindow = new google.maps.InfoWindow({content:'<strong>BAZYLIKA MARIACKA</strong><br>Gdansk, Podkramarska 5<br>'});
+    //infowindow = new google.maps.InfoWindow({content:'<strong>FONTANNA NEPTUNA</strong><br>Gdansk, Dlugi Targ<br>'});
 
 
     google.maps.event.addListener(marker, 'click', function(){
