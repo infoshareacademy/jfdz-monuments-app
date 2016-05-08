@@ -1,24 +1,10 @@
-/**
- * Created by gosia on 22.01.16.
- */
-
 function CSVToArray(strData, strDelimiter) {
-    // Check to see if the delimiter is defined. If not,
-    // then default to comma.
     strDelimiter = (strDelimiter || ",");
-    // Create a regular expression to parse the CSV values.
     var objPattern = new RegExp((
-        // Delimiters.
     "(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +
-        // Quoted fields.
     "(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +
-        // Standard fields.
     "([^\"\\" + strDelimiter + "\\r\\n]*))"), "gi");
-    // Create an array to hold our data. Give the array
-    // a default empty first row.
     var arrData = [[]];
-    // Create an array to hold our individual pattern
-    // matching groups.
     var arrMatches = null;
     // Keep looping over the regular expression matches
     // until we can no longer find a match.
