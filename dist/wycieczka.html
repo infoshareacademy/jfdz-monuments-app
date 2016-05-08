@@ -1,15 +1,85 @@
+<html ng-app="touristApp">
+<meta charset="utf-8">
+<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+<script src="../src/js/jquery-2.1.4.min.js"></script>
+<script src="../node_modules/angular/angular.min.js"></script>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+<script src="../src/js/map.js"></script>
+<script src="../src/js/wycieczka.js"></script>
+<link rel="stylesheet" href="css/wycieczka.css">
+
+
+<div id='map' style='height:400px;width:700px;'></div>
+<div ng-controller="touristCtrl">
+<div class="zabytek photo_stocznia">
+  <h1>STOCZNIA GDAŃSKA </h1>
+  <div class="tresc"> Safnsofnasodin sdn oasiedn aosdnoasidn ao sdn oasnd asiodn
+    sdnaodnasodin oasin dnsaidonaosdin a das</div>
+  <button class="btn btn-success btn-sm" ng-click="dodajZabytek('marker')">Dodaj do planu wycieczki</button>
+</div>
+<div class="zabytek photo_zuraw">
+  <h1>ŻURAW </h1>
+  <div class="tresc"> Sfggsdfsdsdin a das</div>
+  <button class="btn btn-success btn-sm"ng-click="dodajZabytek('marker1')">Dodaj do planu wycieczki</button>
+</div>
+<div class="zabytek photo_dwor_artusa">
+  <h1>DWÓR ARTUSA </h1>
+  <div class="tresc"> Safnsofnaaaaaaaaaaa aaaaaaaaaaaaa
+    sdnaodnasodin oasin dnsaidonaosdin a das</div>
+  <button class="btn btn-success btn-sm"ng-click="dodajZabytek('marker2')">Dodaj do planu wycieczki</button>
+</div>
+<div class="zabytek photo_gdanski_dworzec">
+  <h1>GDAŃSKI DWORZEC</h1>
+  <div class="tresc"> vvascacsa asd asd afnsofnasodin sdn oasiedn aosdnoasidn ao sdn oasnd asiodn
+    sdnaodnasodin oasin dnsaidonaosdin a das</div>
+  <button class="btn btn-success btn-sm"ng-click="dodajZabytek('marker3')">Dodaj do planu wycieczki</button>
+</div>
+<div class="zabytek photo_bazylika_mariacka">
+  <h1>BAZYLIKA MARIACKA</h1>
+  <div class="tresc"> blalvaslaslsd sdn oasiedn aosdnoasidn ao sdn oasnd asiodn
+    sdnaodnasodin oasin dnsaidonaosdin a das</div>
+  <button class="btn btn-success btn-sm"ng-click="dodajZabytek('marker4')">Dodaj do planu wycieczki</button>
+</div>
+<div class="zabytek photo_fontanna_neptuna">
+  <h1>FONTANNA NEPTUNA</h1>
+  <div class="tresc"> rgttetgerv sdn oasiedn aosdnoasidn ao sdn oasnd asiodn
+    sdnaodnasodin oasin dnsaidonaosdin a das</div>
+  <button class="btn btn-success btn-sm"ng-click="dodajZabytek('marker5')">Dodaj do planu wycieczki</button>
+</div>
+
 
 <div class="plan_wycieczki">
-  <div class="opis_zabytku">
-    <div class="obrazek"></div>
-    <div class="tresc"></div>
-  </div>
-  <div class="opis_zabytku">
-    <div class="obrazek"></div>
-    <div class="tresc"></div>
-  </div>
-  <div class="opis_zabytku">
-    <div class="obrazek"></div>
-    <div class="tresc"></div>
-  </div>
+ <table class="table table-striped">
+     <tr><th>plan wycieczki</th></tr>
+    <tr ng-repeat="monument in monuments">
+    <td>{{monument.name}}</td>
+    <td><input type="checkbox"></td>
+    </tr>
+ </table>
 </div>
+
+
+</div>
+
+<!--<div class="zwiedzany_zabytek1">ten zabytek1</div>-->
+<!--<div class="zwiedzany_zabytek2">ten zabytek2</div>-->
+<!--<div class="zwiedzany_zabytek3">ten zabytek3</div>-->
+<!--<div class="zwiedzany_zabytek4">ten zabytek4</div>-->
+<!--<div class="zwiedzany_zabytek5">ten zabytek5</div>-->
+<!--<div class="zwiedzany_zabytek6">ten zabytek6</div>-->
+
+</html>
+<!--<div id='plan_wycieczki'>-->
+<!--<div class="opis_zabytku">-->
+    <!--<div class="obrazek"></div>-->
+    <!--<div class="tresc"></div>-->
+  <!--</div>-->
+  <!--<div class="opis_zabytku">-->
+    <!--<div class="obrazek"></div>-->
+    <!--<div class="tresc"></div>-->
+  <!--</div>-->
+  <!--<div class="opis_zabytku">-->
+    <!--<div class="obrazek"></div>-->
+    <!--<div class="tresc"></div>-->
+  <!--</div>-->
+<!--</div>-->
