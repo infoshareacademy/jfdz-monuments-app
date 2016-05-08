@@ -17,17 +17,17 @@
     <!-- Custom CSS -->
     <link href="css/app.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>-->
+
+        <!--<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
+        <!--<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
         <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
         <script src="../node_modules/angular/angular.min.js"></script>
         <script src="../src/js/test.js"></script>
-
+        <script src="js/search.js"></script>
+         <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <script src="../node_modules/angular/angular.min.js"></script>
     <![endif]-->
     <!--fonty-->
     <link href='https://fonts.googleapis.com/css?family=Marcellus+SC' rel='stylesheet' type='text/css'>
@@ -97,6 +97,16 @@
         <div class="api row" id="contact">
             <div class="col-md-12 down">
             DANE Z API
+                <div class="form-group" ng-controller="UsersController">
+                    <label for=>Select list:</label>
+                    <select class="form-control" ng-model="selectedMonumentId">
+                        <option ng-repeat="zabytek in zabytki" value="{{zabytek.id}}">{{zabytek.name}}</option>
+                    </select>
+
+                    <h2>Opis zabytkow</h2>
+                    <div id="description">{{selectedMonument.description}}</div>
+                </div>
+            </div>
             </div>
         </div>
     <!-- /.container -->
@@ -108,13 +118,13 @@
 
 
         <!-- jQuery -->
-    <script src="_js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="_js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 
-</div>
+
 </body>
 
 </html>
