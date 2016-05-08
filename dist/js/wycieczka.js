@@ -18,7 +18,7 @@
 
 //angular mvc dla planu wycieczki
 
-var touristApp = angular.module("touristApp", []);
+var app= angular.module("app");
 
 //var model = {monuments:
 //    [{name: "Żuraw"},
@@ -40,7 +40,7 @@ var monuments = [
     {id: 'marker5', name: "Fontanna Neptuna"}
 ];
 
-touristApp.controller("touristCtrl", function ($scope) {
+app.controller("touristCtrl", function ($scope) {
     $scope.monuments = [];
 
     $scope.dodajZabytek = function (zabytekId) {
