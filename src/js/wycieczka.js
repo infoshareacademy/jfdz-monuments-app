@@ -44,8 +44,8 @@ touristApp.controller("touristCtrl", function ($scope) {
     $scope.monuments = [];
 
     $scope.dodajZabytek = function (zabytekId) {
-        var filteredList = monuments.filter(function (item) {
-            return item.id == zabytekId;
+        var filteredList = monuments.filter(function (monument) {
+            return monument.id == zabytekId;
         })
 
         if (filteredList.length > 0) {
