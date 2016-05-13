@@ -18,7 +18,7 @@
 
 //angular mvc dla planu wycieczki
 
-var touristApp = angular.module("touristApp", []);
+var touristApp = angular.module("touristApp", ['ui.sortable']);
 
 //var model = {monuments:
 //    [{name: "Żuraw"},

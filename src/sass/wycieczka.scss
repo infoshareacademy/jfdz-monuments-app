@@ -1,4 +1,4 @@
-$tło: green;
+$tło: black;
 
 
 body {
@@ -34,3 +34,45 @@ body {
  color: black;
  //width: 800px;
 }
+
+.plan_wycieczki {
+ margin: 10px;
+}
+
+.plan_wycieczki span{
+ font-weight: bolder;
+ color: red;
+
+}
+.table {
+ background-color: white;
+ width: 50%;
+ margin-left: 9px;
+}
+
+table td {
+ border-top: none !important;
+}
+.table tr {
+ border: 1px solid lightgray;
+}
+//.table-hover tbody tr:hover td,
+//.table-hover tbody tr:hover th {
+// background-color: sandybrown;
+//
+//}
+
+//.list-group-item {
+// width: 50%;
+//cursor: pointer;
+// margin-left: 9px;
+// }
+//
+//.list-group-item:hover {
+// background-color: sandybrown;
+//}
+//
+//ul li input[type='checkbox'] {
+// margin-left: 20px;
+//}
+

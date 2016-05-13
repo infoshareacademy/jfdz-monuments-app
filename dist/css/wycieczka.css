@@ -1,5 +1,5 @@
 body {
-  color: green; }
+  color: black; }
 
 .zabytek {
   background-color: sandybrown;
@@ -20,3 +20,21 @@ body {
 
 .table-striped {
   color: black; }
+
+.plan_wycieczki {
+  margin: 10px; }
+
+.plan_wycieczki span {
+  font-weight: bolder;
+  color: red; }
+
+.table {
+  background-color: white;
+  width: 50%;
+  margin-left: 9px; }
+
+table td {
+  border-top: none !important; }
+
+.table tr {
+  border: 1px solid lightgray; }

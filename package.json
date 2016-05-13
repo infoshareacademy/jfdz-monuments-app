@@ -19,6 +19,7 @@
   "homepage": "https://github.com/infoshareacademy/jfdz-monuments-app#readme",
   "dependencies": {
     "angular": "^1.5.5",
+    "angular-ui-sortable": "^0.14.0",
     "bootstrap-sass": "^3.3.6",
     "gulp": "^3.9.1",
     "gulp-jade": "^1.1.0",
