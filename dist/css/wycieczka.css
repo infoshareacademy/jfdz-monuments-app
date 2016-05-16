@@ -41,5 +41,6 @@ table td {
   cursor: hand; }
 
 .visited {
-  color: green;
+  color: white;
+  background: green;
   font-weight: bolder; }
