@@ -18,11 +18,11 @@ function checkLoginState() {
 
 window.fbAsyncInit = function () {
     FB.init({
-        appId: '1672276063013270',
+        appId: '1730287713922335',
         cookie: true,
 
         xfbml: true,
-        version: 'v2.2'
+        version: 'v2.6'
     });
 
     FB.getLoginStatus(function (response) {
@@ -35,7 +35,7 @@ window.fbAsyncInit = function () {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s);
-    js.id = 183202345374099;
+    js.id = 1730287713922335;
     js.src = "//connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
