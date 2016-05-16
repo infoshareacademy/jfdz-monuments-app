@@ -46,16 +46,23 @@ body {
 }
 .table {
  background-color: white;
- width: 50%;
+ width: 35%;
  margin-left: 9px;
 }
 
 table td {
- border-top: none !important;
+ border: none !important;
 }
 .table tr {
  border: 1px solid lightgray;
+ cursor: hand;
 }
+.visited {
+ color: green;
+ font-weight: bolder;
+}
+
+
 //.table-hover tbody tr:hover td,
 //.table-hover tbody tr:hover th {
 // background-color: sandybrown;

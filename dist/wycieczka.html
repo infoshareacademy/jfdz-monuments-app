@@ -91,7 +91,8 @@
         <tbody ui-sortable>
         <tr ng-repeat="monument in monuments">
             <td>{{monument.name}}</td>
-            <td><input type="checkbox"></td>
+            <td><input type="checkbox"ng-model="visited"></td>
+            <td class="visited" ng-show="visited">Miejsce zwiedzone!</td>
         </tr>
         </tbody>
     </table>
