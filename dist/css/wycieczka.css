@@ -1,2 +1,55 @@
+@charset "UTF-8";
 body {
-  color: green; }
+  color: black; }
+
+.zabytek {
+  background-color: lightgray;
+  color: black;
+  border: 3px solid grey;
+  box-shadow: 6px 15px 32px 0px rgba(0,0,0,0.4);
+  height: 300px;
+  width: 300px;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  left: 750px; }
+
+#map {
+  border: 2px solid black; }
+
+.zwiedzany_zabytek2 {
+  background-color: red; }
+
+.table-striped {
+  color: black; }
+
+.plan_wycieczki {
+  margin: 10px; }
+
+.plan_wycieczki_tył {
+  padding: 10px; }
+
+.plan_wycieczki span {
+  font-weight: bolder;
+  color: red; }
+
+.table {
+  background-color: white;
+  width: 45%;
+  margin-left: 9px; }
+
+table td {
+  border: none !important; }
+
+.table tr {
+  border: 1px solid lightgray;
+  cursor: move; }
+
+.visited {
+  color: white;
+  background: green;
+  font-weight: bolder;
+  margin-left: 10px; }
+
+.visited span {
+  cursor: hand; }
