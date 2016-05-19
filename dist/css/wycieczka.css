@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   color: black; }
 
@@ -24,13 +25,16 @@ body {
 .plan_wycieczki {
   margin: 10px; }
 
+.plan_wycieczki_tył {
+  padding: 10px; }
+
 .plan_wycieczki span {
   font-weight: bolder;
   color: red; }
 
 .table {
   background-color: white;
-  width: 35%;
+  width: 45%;
   margin-left: 9px; }
 
 table td {
@@ -38,9 +42,13 @@ table td {
 
 .table tr {
   border: 1px solid lightgray;
-  cursor: hand; }
+  cursor: move; }
 
 .visited {
   color: white;
   background: green;
-  font-weight: bolder; }
+  font-weight: bolder;
+  margin-left: 10 px; }
+
+.visited span {
+  cursor: hand; }

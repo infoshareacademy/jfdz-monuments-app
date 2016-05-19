@@ -39,6 +39,12 @@ body {
  margin: 10px;
 }
 
+.plan_wycieczki_tył {
+ //background-color: red;
+ padding: 10px;
+}
+
+
 .plan_wycieczki span{
  font-weight: bolder;
  color: red;
@@ -46,7 +52,7 @@ body {
 }
 .table {
  background-color: white;
- width: 35%;
+ width: 45%;
  margin-left: 9px;
 }
 
@@ -55,13 +61,16 @@ table td {
 }
 .table tr {
  border: 1px solid lightgray;
- cursor: hand;
+ cursor: move;
 }
 .visited {
  color: white;
  background: green;
  font-weight: bolder;
  margin-left: 10 px;
+}
+.visited span{
+ cursor:hand;
 }
 
 

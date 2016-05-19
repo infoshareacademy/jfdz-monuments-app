@@ -87,12 +87,14 @@
     <div class="plan_wycieczki">
         <span>Ułóż plan wycieczki dodając pozycje z mapy!</span>
     </div>
+    <div class="plan_wycieczki_tył">
     <table class="table table-hover">
         <tbody ui-sortable>
         <tr ng-repeat="monument in monuments">
             <td>{{monument.name}}</td>
-            <td><input type="checkbox"ng-model="visited"></td>
+            <td><input type="checkbox" ng-model="visited"></td>
             <td class="visited" ng-show="visited">Miejsce zwiedzone!</td>
+            <td class="visited" ng-show="visited"><span class="glyphicon glyphicon-trash"></span></td>
         </tr>
         </tbody>
     </table>
@@ -101,7 +103,8 @@
     <!--<li class="list-group-item" ng-repeat="monument in monuments">{{monument.name}}<input type="checkbox"></li>-->
 
     <!--</ul>-->
-
+        <button  class="btn-danger btn-xs"ng-click="usunZabytki()">wyczyść listę</button>
+    </div>
 </div>
 
 

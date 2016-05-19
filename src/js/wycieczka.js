@@ -51,6 +51,10 @@ touristApp.controller("touristCtrl", function ($scope) {
         if (filteredList.length > 0) {
             $scope.monuments.push(filteredList[0]);
         }
+
     }
 
+    $scope.usunZabytki =function(){
+        $scope.monuments.length = 0;
+    }
 });
