@@ -97,8 +97,6 @@ function init_map(){var myOptions = {
     google.maps.event.addDomListener(window, 'load', init_map);
 
 
-
-
 //google.maps.on('click', marker, function(){
 //  $('.plan_wycieczki').text('jestem tutaj');
 //

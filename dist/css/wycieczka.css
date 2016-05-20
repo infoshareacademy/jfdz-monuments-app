@@ -30,25 +30,27 @@ body {
 
 .plan_wycieczki span {
   font-weight: bolder;
-  color: red; }
+  color: red;
+  font-family: "Microsoft PhagsPa";
+  font-size: 16px; }
 
 .table {
   background-color: white;
-  width: 45%;
-  margin-left: 9px; }
+  width: 690px; }
 
 table td {
   border: none !important; }
 
 .table tr {
-  border: 1px solid lightgray;
-  cursor: move; }
+  border: 2px solid saddlebrown;
+  cursor: move;
+  font-family: "Microsoft PhagsPa";
+  font-weight: bold; }
 
 .visited {
   color: white;
   background: green;
-  font-weight: bolder;
-  margin-left: 10 px; }
+  margin-left: 10px; }
 
 .visited span {
   cursor: hand; }
