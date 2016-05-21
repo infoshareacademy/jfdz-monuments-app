@@ -20,12 +20,13 @@ touristApp.controller("touristCtrl", function ($scope) {
         if( filteredList.length > 0 ){
             var exists = $scope.monuments.filter(function (monument) {
                 return monument.id == zabytekId;
+
             });
+            console.log(exists);
             if( exists.length == 0 ) {
                 $scope.monuments.push(filteredList[0]);
             }
         }
-console.log($scope.monuments);
     };
 
     $scope.usunZabytki = function () {

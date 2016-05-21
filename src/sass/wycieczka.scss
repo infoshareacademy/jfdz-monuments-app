@@ -12,9 +12,11 @@ body {
 .zabytek {
  background-color: lightgray;
  color: brown;
- border: 3px solid grey;
+ border: 3px solid gray;
+ padding-left: 3ch;
+ padding-right: 3ch;
  box-shadow: 6px 15px 32px 0px rgba(0,0,0,0.9);
- height: 300px;
+ height: 350px;
  width: 300px;
  font-size: 14px;
  position: absolute;
@@ -57,7 +59,7 @@ body {
 .table {
  background-color: white;
  width: 690px;
- //margin-left: 9px;
+ counter-reset: rowNumber;
 }
 
 table td {
@@ -68,7 +70,16 @@ table td {
  cursor: move;
  font-family: "Microsoft PhagsPa";
  font-weight: bold;
+ counter-increment: rowNumber;
 }
+
+table tr td:first-child::before {
+ content: counter(rowNumber);
+ min-width: 1em;
+ margin-right: 0.5em;
+}
+
+
 .visited {
  color: white;
  background: green;
