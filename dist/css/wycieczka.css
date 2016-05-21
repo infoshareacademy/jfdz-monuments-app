@@ -1,28 +1,27 @@
+@charset "UTF-8";
 .zabytek {
-    /*background-image: url('../_img/back_dk.jpg');*/
-    font-family: 'Exo 2', sans-serif;
-    font-size: 16px;
-    font-weight: 200;
-    color: #a27854;
-    height: 73%;
-    width: 50%;
-    position: absolute;
-    top: 0px;
-    left: 584px;
-}
+  background-color: lightgray;
+  color: brown;
+  border: 3px solid gray;
+  padding-left: 3ch;
+  padding-right: 3ch;
+  box-shadow: 6px 15px 32px 0px rgba(0, 0, 0, 0.9);
+  height: 350px;
+  width: 300px;
+  font-size: 14px;
+  position: absolute;
+  top: 10px;
+  left: 780px;
+  padding-bottom: 5px; }
 
 #map {
-    border: 2px solid black;
-    top: 14px;
-}
+  border: 2px solid black; }
 
 .zwiedzany_zabytek2 {
-    background-color: red;
-}
+  background-color: red; }
 
 .table-striped {
-    color: black;
-}
+  color: black; }
 
 .plan_wycieczki {
   margin: 10px; }
