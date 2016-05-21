@@ -1,5 +1,5 @@
 (function () {
-    var app = angular.module ('app', []);
+    var app = angular.module ('app', ['touristApp']);
     app.controller('UsersController', ['$scope', '$http', function ($scope, $http) {
         $http.get('../dist/data/zabytki_2.csv').success(function (data) {
             $scope.zabytki = data;
