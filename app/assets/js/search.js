@@ -1,38 +1,34 @@
 var app = angular.module('app', []);
 
 app.controller('UsersController', ['$scope', '$http', function ($scope, $http) {
+    $scope.zabytki = {};
     $http.get('../dist/data/zabytki_2.csv').success(function (data) {
-        $scope.kategorieZabytkow = ['kościół'];
-        $scope.zabytki = data;
+        $scope.kategorieZabytkow = [
+            {title: 'Kościoły', searchString: 'kościół'},
+            {title: 'Spichlerze', searchString: 'spichlerz'},
+            {title: 'Pałace', searchString: 'pałac'},
+            {title: 'Stocznie', searchString: 'stoczn'},
+            {title: 'Bramy', searchString: 'brama'},
+            {title: 'Cmentarze', searchString: 'cmentarz'}
+        ];
 
-        var arr = CSVToArray(data, ';');
+        $scope.arr = CSVToArray(data, ';');
 
-        var mojeZabytyki = arr.filter(function (item) {
-            console.log(item[3], item[3].indexOf('kościół'));
-            return item[3].indexOf('kościół') !== -1;
+        $scope.kategorieZabytkow.forEach(function (kategoria, index) {
+            var mojeZabytyki = $scope.arr.filter(function (item) {
+                return item[3].indexOf(kategoria.searchString) !== -1;
+            });
+
+            mojeZabytyki = mojeZabytyki.map(function (item) {
+                return {
+                    OPIS: item[3],
+
+                    ADRES: item[1] + ' ' + item[2]
+
+                }
+            });
+            $scope.zabytki[index] = mojeZabytyki;
         });
-
-        mojeZabytyki = mojeZabytyki.map(function (item) {
-            return {
-                address: item[1] + ' ' + item[2],
-                description: item[3]
-            }
-        });
-
-        $scope.zabytki = mojeZabytyki;
-
-        ng repeat
-
-        //$scope.$watch('selectedMonumentId', function () {
-        //    var filtered = $scope.zabytki.filter(function (item) {
-        //        return item.id  === $scope.selectedMonumentId;
-        //    });
-        //
-        //    $scope.selectedMonument = filtered.length > 0 ? filtered[0] : null;
-        //});
     });
 
-    $scope.onCategoryChange = function () {
-        console.log('zmiana kategorii, na ', $scope.selectedCategory);
-    }
 }]);

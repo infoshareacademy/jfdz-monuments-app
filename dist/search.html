@@ -19,12 +19,13 @@
 
 <div class="form-group" ng-controller="UsersController">
     <label for=>Select list:</label>
-    <select class="form-control" ng-model="selectedCategory" ng-change="onCategoryChange()">
-        <option ng-repeat="kategoria in kategorieZabytkow" value="kościół">{{kategoria}}</option>
+    <select class="form-control" ng-model="selectedCategory">
+        <option ng-repeat="kategoria in kategorieZabytkow" value="{{$index}}">{{kategoria.title}}</option>
     </select>
-ng-repeat=
-    <h2>Opis zabytkow</h2>
-        <div id="description">{{mojeZabytyki}}</div>
+
+    <h2>LISTA</h2>
+    <div ng-repeat="zabytek in zabytki[selectedCategory]">
+        {{zabytek}}
     </div>
 </div>
 
