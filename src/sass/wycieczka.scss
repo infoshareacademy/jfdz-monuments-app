@@ -1,8 +1,36 @@
-$tło: green;
+//$tło: red;
+//
+//
+//body {
+// color: $tło;
+//
+//}
 
-
-body {
- color: $tło;
-
+#zabytki {
+ //display: none;
+}
+.zabytek {
+ background-color: sandybrown;
+ color: black;
+ border: 3px dotted black;
+ height: 300px;
+ width: 300px;
+ font-size: 10px;
+ position: absolute;
+ top: 10px;
+ left:  750px;
 }
 
+#map {
+
+ border: 2px solid black;
+}
+
+.zwiedzany_zabytek2 {
+ background-color: red;
+}
+
+.table-striped {
+ color: black;
+ //width: 800px;
+}
