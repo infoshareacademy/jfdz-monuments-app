@@ -1,13 +1,21 @@
+@charset "UTF-8";
+body {
+  color: black; }
+
 .zabytek {
-  background-color: sandybrown;
-  color: black;
-  border: 3px dotted black;
-  height: 300px;
+  background-color: lightgray;
+  color: brown;
+  border: 3px solid gray;
+  padding-left: 3ch;
+  padding-right: 3ch;
+  box-shadow: 6px 15px 32px 0px rgba(0, 0, 0, 0.9);
+  height: 350px;
   width: 300px;
-  font-size: 10px;
+  font-size: 14px;
   position: absolute;
   top: 10px;
-  left: 750px; }
+  left: 750px;
+  padding-bottom: 5px; }
 
 #map {
   border: 2px solid black; }
@@ -17,3 +25,42 @@
 
 .table-striped {
   color: black; }
+
+.plan_wycieczki {
+  margin: 10px; }
+
+.plan_wycieczki_tył {
+  padding: 10px; }
+
+.plan_wycieczki span {
+  font-weight: bolder;
+  color: red;
+  font-family: "Microsoft PhagsPa";
+  font-size: 16px; }
+
+.table {
+  background-color: white;
+  width: 690px; }
+
+table td {
+  border: none !important; }
+
+.table tr {
+  border: 2px solid saddlebrown;
+  cursor: move;
+  font-family: "Microsoft PhagsPa";
+  font-weight: bold;
+  counter-increment: rowNumber; }
+
+table tr td:first-child::before {
+  content: counter(rowNumber);
+  min-width: 1em;
+  margin-right: 0.5em; }
+
+.visited {
+  color: white;
+  background: green;
+  margin-left: 10px; }
+
+.visited span {
+  cursor: hand; }
