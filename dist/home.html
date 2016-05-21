@@ -22,12 +22,13 @@
     <script src="js/search.js"></script>
     <!--<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>-->
     <script src="../node_modules/angular/angular.min.js"></script>
-    <script src="./data/convert_csv_json.js"></script>
+    <script src="../app/assets/js/convert_csv_json.js"></script>
     <script src="./js/wycieczka.js"></script>
     <script src="./js/map.js"></script>
     <link rel="stylesheet" href="../jquery-ui-1.11.4/jquery-ui-1.11.4/jquery-ui.css">
     <script type="text/javascript" src="../node_modules/angular-ui-sortable/src/sortable.js"></script>
-
+    <script src="../app/assets/js/search.js"></script>
+    <script src="../app/assets/js/convert_csv_json.js"></script>
 
     <![endif]-->
     <!--fonty-->
@@ -145,20 +146,8 @@
         </div>
 
     </div>
-    <div class="api row" id="nav_api">
-        <div class="col-md-12 down">
-            DANE Z API
-            <div class="form-group" ng-controller="UsersController">
-                <label for=>Select list:</label>
-                <select class="form-control" ng-model="selectedMonumentId">
-                    <option ng-repeat="zabytek in zabytki" value="{{zabytek.id}}">{{zabytek.name}}</option>
-                </select>
+    <div class="api row" id="nav_api" ng-include="'./search.html'">
 
-                <h2>Opis zabytkow</h2>
-
-                <div id="description">{{selectedMonument.description}}</div>
-            </div>
-        </div>
     </div>
     <!--footer-->
     <footer class="row" id="footer" id="nav_contact">
