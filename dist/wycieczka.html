@@ -16,46 +16,56 @@
     <div class="zabytek photo_stocznia">
         <h1>STOCZNIA GDAŃSKA </h1>
 
-        <div class="tresc"> Safnsofnasodin sdn oasiedn aosdnoasidn ao sdn oasnd asiodn
-            sdnaodnasodin oasin dnsaidonaosdin a das
+        <div class="tresc">  Stocznia Gdańska zlokalizowana na lewym brzegu Martwej Wisły i na Ostrowiu. (od 2006 roku: Stocznia
+            Gdańsk SA)
+            – jedna z największych polskich stoczni, zlokalizowana w Gdańsku na lewym brzegu Martwej Wisły i na
+            Ostrowiu.
         </div>
         <button class="btn btn-success btn-sm" ng-click="dodajZabytek('marker')">Dodaj do planu wycieczki</button>
     </div>
     <div class="zabytek photo_zuraw">
         <h1>ŻURAW </h1>
 
-        <div class="tresc"> Sfggsdfsdsdin a das</div>
+        <div class="tresc"> Żuraw - największy dźwig portowy średniowiecznej Europy, jedna z najbardziej charakterystycznych
+            budowli Gdańska.
+            Położony nad Motławą, służył do przeładunku towarów i stawiania masztów na statkach. Pełnił zarazem
+            funkcję bramy miejskiej.
+            Obecną formę uzyskał w latach 1442-1444.</div>
         <button class="btn btn-success btn-sm" ng-click="dodajZabytek('marker1')">Dodaj do planu wycieczki</button>
     </div>
     <div class="zabytek photo_dwor_artusa">
         <h1>DWÓR ARTUSA </h1>
 
-        <div class="tresc"> Safnsofnaaaaaaaaaaa aaaaaaaaaaaaa
-            sdnaodnasodin oasin dnsaidonaosdin a das
+        <div class="tresc"> Dwór Artusa - przez wiele lat był jednym z najwspanialszych tego typu obiektów w Europie północnej.
+            Dwory Artusa powstawały licznie w całej Europie a szczególnie w miastach hanzeatyckich,
+            jako miejsca spotkań zamożnego patrycjatu, kupców i rzemieślników.
         </div>
         <button class="btn btn-success btn-sm" ng-click="dodajZabytek('marker2')">Dodaj do planu wycieczki</button>
     </div>
     <div class="zabytek photo_gdanski_dworzec">
         <h1>GDAŃSKI DWORZEC</h1>
 
-        <div class="tresc"> vvascacsa asd asd afnsofnasodin sdn oasiedn aosdnoasidn ao sdn oasnd asiodn
-            sdnaodnasodin oasin dnsaidonaosdin a das
+        <div class="tresc"> Reprezentacyjny i przestronny Dworzec Główny został wybudowany w latach 1894-1900, w stylu tzw.
+            "gdańskiego renesansu".
+            Projektantami kompleksu dworcowego byli Alexander Rundel, Paul Thomer i Georg Cuny.
         </div>
         <button class="btn btn-success btn-sm" ng-click="dodajZabytek('marker3')">Dodaj do planu wycieczki</button>
     </div>
     <div class="zabytek photo_bazylika_mariacka">
         <h1>BAZYLIKA MARIACKA</h1>
 
-        <div class="tresc"> blalvaslaslsd sdn oasiedn aosdnoasidn ao sdn oasnd asiodn
-            sdnaodnasodin oasin dnsaidonaosdin a das
+        <div class="tresc">Bazylika Mariacka zwana "koroną miasta Gdańska" - Kościół Wniebowzięcia Najświętszej Marii Panny.
+            Największa ceglana, gotycka świątynia w Europie, powstawał 159 lat w kilku etapach w latach
+            1343-1502.
         </div>
         <button class="btn btn-success btn-sm" ng-click="dodajZabytek('marker4')">Dodaj do planu wycieczki</button>
     </div>
     <div class="zabytek photo_fontanna_neptuna">
         <h1>FONTANNA NEPTUNA</h1>
 
-        <div class="tresc"> rgttetgerv sdn oasiedn aosdnoasidn ao sdn oasnd asiodn
-            sdnaodnasodin oasin dnsaidonaosdin a das
+        <div class="tresc">Fontanna Neptuna - została zaprojektowana przez Abrahama van den Blocke.
+            Podstawowym źródłem strumieni wodnych jest trójząb trzymany przez władcę mórz i oceanów w prawicy,
+            znajdujące się u jego stóp konie morskie oraz krawędź postumentu.
         </div>
         <button class="btn btn-success btn-sm" ng-click="dodajZabytek('marker5')">Dodaj do planu wycieczki</button>
     </div>
@@ -76,7 +86,7 @@
                 <td><input type="checkbox" ng-model="visited"></td>
                 <td class="visited" ng-show="visited">Miejsce zwiedzone!</td>
                 <td ng-hide="visited"></td>
-                <td class="visited" ng-show="visited"><span class="glyphicon glyphicon-trash"></span></td>
+                <td class="visited" ng-show="visited"><span ng-click="usunZabytek(monument)" class="glyphicon glyphicon-trash"></span></td>
                 <td ng-hide="visited"></td>
             </tr>
             </tbody>

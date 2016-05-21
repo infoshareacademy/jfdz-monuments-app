@@ -10,15 +10,17 @@ body {
  //display: none;
 }
 .zabytek {
- background-color: sandybrown;
- color: black;
- border: 3px dotted black;
+ background-color: lightgray;
+ color: brown;
+ border: 3px solid grey;
+ box-shadow: 6px 15px 32px 0px rgba(0,0,0,0.9);
  height: 300px;
  width: 300px;
- font-size: 10px;
+ font-size: 14px;
  position: absolute;
  top: 10px;
  left:  750px;
+ padding-bottom: 5px;
 }
 
 #map {
