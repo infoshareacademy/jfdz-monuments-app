@@ -1,84 +1,109 @@
-<!--<html ng-app="touristApp">-->
-<!--<meta charset="utf-8">-->
-<!--<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />-->
-<!--<script src="../src/js/jquery-2.1.4.min.js"></script>-->
-<!--<script src="../node_modules/angular/angular.min.js"></script>-->
+<html ng-app="touristApp">
+<meta charset="utf-8">
+<script src="../src/js/jquery-2.1.4.min.js"></script>
+<script src="../jquery-ui-1.11.4/jquery-ui-1.11.4/jquery-ui.js"></script>
+<script src="../node_modules/angular/angular.min.js"></script>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+<script src="../dist/js/map.js"></script>
+<script src="../dist/js/wycieczka.js"></script>
+<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/wycieczka.css">
+<link rel="stylesheet" href="../jquery-ui-1.11.4/jquery-ui-1.11.4/jquery-ui.css">
+<script type="text/javascript" src="../node_modules/angular-ui-sortable/src/sortable.js"></script>
 
-<!--<script src="../src/js/map.js"></script>-->
-
-
-<div id='map' style='height:400px;width:500px;'></div>
+<div id='map' style='height:400px;width:700px;'></div>
 <div ng-controller="touristCtrl">
     <div class="zabytek photo_stocznia">
-        <h1>STOCZNIA GDAŃSKA </h1>
+        <h3>STOCZNIA GDAŃSKA </h3>
 
-        <div class="tresc"> lorem ipsum
-        </div>
+        <div class="tresc">  Stocznia Gdańska zlokalizowana na lewym brzegu Martwej Wisły i na Ostrowiu. (od 2006 roku: Stocznia
+            Gdańsk SA)
+            – jedna z największych polskich stoczni, zlokalizowana w Gdańsku na lewym brzegu Martwej Wisły i na
+            Ostrowiu.
+        </div><br>
         <button class="btn btn-success btn-sm" ng-click="dodajZabytek('marker')">Dodaj do planu wycieczki</button>
     </div>
     <div class="zabytek photo_zuraw">
-        <h1>ŻURAW </h1>
+        <h3>ŻURAW </h3>
 
-        <div class="tresc"> ipsum lorem</div>
+        <div class="tresc"> Żuraw - największy dźwig portowy średniowiecznej Europy, jedna z najbardziej charakterystycznych
+            budowli Gdańska.
+            Położony nad Motławą, służył do przeładunku towarów i stawiania masztów na statkach. Pełnił zarazem
+            funkcję bramy miejskiej.
+            Obecną formę uzyskał w latach 1442-1444.</div><br>
         <button class="btn btn-success btn-sm" ng-click="dodajZabytek('marker1')">Dodaj do planu wycieczki</button>
     </div>
     <div class="zabytek photo_dwor_artusa">
-        <h1>DWÓR ARTUSA </h1>
+        <h3>DWÓR ARTUSA </h3>
 
-        <div class="tresc"> Safnsofnaaaaaaaaaaa aaaaaaaaaaaaa
-            sdnaodnasodin oasin dnsaidonaosdin a das
-        </div>
+        <div class="tresc"> Dwór Artusa - przez wiele lat był jednym z najwspanialszych tego typu obiektów w Europie północnej.
+            Dwory Artusa powstawały licznie w całej Europie a szczególnie w miastach hanzeatyckich,
+            jako miejsca spotkań zamożnego patrycjatu, kupców i rzemieślników.
+        </div><br>
         <button class="btn btn-success btn-sm" ng-click="dodajZabytek('marker2')">Dodaj do planu wycieczki</button>
     </div>
     <div class="zabytek photo_gdanski_dworzec">
-        <h1>GDAŃSKI DWORZEC</h1>
+        <h3>GDAŃSKI DWORZEC</h3>
 
-        <div class="tresc"> vvascacsa asd asd afnsofnasodin sdn oasiedn aosdnoasidn ao sdn oasnd asiodn
-            sdnaodnasodin oasin dnsaidonaosdin a das
-        </div>
+        <div class="tresc"> Reprezentacyjny i przestronny Dworzec Główny został wybudowany w latach 1894-1900, w stylu tzw.
+            "gdańskiego renesansu".
+            Projektantami kompleksu dworcowego byli Alexander Rundel, Paul Thomer i Georg Cuny.
+        </div><br>
         <button class="btn btn-success btn-sm" ng-click="dodajZabytek('marker3')">Dodaj do planu wycieczki</button>
     </div>
     <div class="zabytek photo_bazylika_mariacka">
-        <h1>BAZYLIKA MARIACKA</h1>
+        <h3>BAZYLIKA MARIACKA</h3>
 
-        <div class="tresc"> blalvaslaslsd sdn oasiedn aosdnoasidn ao sdn oasnd asiodn
-            sdnaodnasodin oasin dnsaidonaosdin a das
-        </div>
+        <div class="tresc">Bazylika Mariacka zwana "koroną miasta Gdańska" - Kościół Wniebowzięcia Najświętszej Marii Panny.
+            Największa ceglana, gotycka świątynia w Europie, powstawał 159 lat w kilku etapach w latach
+            1343-1502.
+        </div><br>
         <button class="btn btn-success btn-sm" ng-click="dodajZabytek('marker4')">Dodaj do planu wycieczki</button>
     </div>
     <div class="zabytek photo_fontanna_neptuna">
-        <h1>FONTANNA NEPTUNA</h1>
+        <h3>FONTANNA NEPTUNA</h3>
 
-        <div class="tresc"> rgttetgerv sdn oasiedn aosdnoasidn ao sdn oasnd asiodn
-            sdnaodnasodin oasin dnsaidonaosdin a das
-        </div>
+        <div class="tresc">Fontanna Neptuna - została zaprojektowana przez Abrahama van den Blocke.
+            Podstawowym źródłem strumieni wodnych jest trójząb trzymany przez władcę mórz i oceanów w prawicy,
+            znajdujące się u jego stóp konie morskie oraz krawędź postumentu.
+        </div><br>
         <button class="btn btn-success btn-sm" ng-click="dodajZabytek('marker5')">Dodaj do planu wycieczki</button>
+    </div>
+
+
+    <div class="plan_wycieczki">
+        <span>Ułóż plan wycieczki dodając pozycje z mapy!</span>
+    </div>
+    <div class="plan_wycieczki_tył">
+        <table class="table table-hover">
+            <thead>
+            </thead>
+            <tbody ui-sortable>
+            <tr ng-repeat="monument in monuments">
+                <td></td>
+                <td>{{monument.name}}</td>
+                <td>{{monument.street}}</td>
+                <td><input type="checkbox" ng-model="visited"></td>
+                <td class="visited" ng-show="visited">Miejsce zwiedzone!</td>
+                <td ng-hide="visited"></td>
+                <td class="visited" ng-show="visited"><span ng-click="usunZabytek(monument)" class="glyphicon glyphicon-trash"></span></td>
+                <td ng-hide="visited"></td>
+            </tr>
+            </tbody>
+        </table>
+        <!--drugi sposób:
+        <ul class="list-group disabled active" ui-sortable>-->
+        <!--<li class="list-group-item" ng-repeat="monument in monuments">{{monument.name}}<input type="checkbox"></li>-->
+
+        <!--</ul>-->
+        <button class="btn-danger btn-xs" ng-click="usunZabytki()">wyczyść listę</button>
     </div>
 </div>
 
-<br>
-<br>
-<div class="plan_wycieczki">
-    <table class="table table-striped">
-        <tr>
-            <th>plan wycieczki</th>
-        </tr>
-        <tr ng-repeat="monument in monuments">
-            <td>{{monument.name}}</td>
-            <td><input type="checkbox"></td>
-        </tr>
-    </table>
-</div>
+
+</html>
 
 
-<!--<div class="zwiedzany_zabytek1">ten zabytek1</div>-->
-<!--<div class="zwiedzany_zabytek2">ten zabytek2</div>-->
-<!--<div class="zwiedzany_zabytek3">ten zabytek3</div>-->
-<!--<div class="zwiedzany_zabytek4">ten zabytek4</div>-->
-<!--<div class="zwiedzany_zabytek5">ten zabytek5</div>-->
-<!--<div class="zwiedzany_zabytek6">ten zabytek6</div>-->
-
-<!--</html>-->
 <!--<div id='plan_wycieczki'>-->
 <!--<div class="opis_zabytku">-->
 <!--<div class="obrazek"></div>-->

@@ -7,31 +7,106 @@
 //}
 
 #zabytki {
-  //display: none;
+ //display: none;
 }
-
 .zabytek {
-  background-color: sandybrown;
-  color: black;
-  border: 3px dotted black;
-  height: 300px;
-  width: 300px;
-  font-size: 10px;
-  position: absolute;
-  top: 10px;
-  left: 750px;
+ background-color: lightgray;
+ color: brown;
+ border: 3px solid gray;
+ padding-left: 3ch;
+ padding-right: 3ch;
+ box-shadow: 6px 15px 32px 0px rgba(0,0,0,0.9);
+ height: 350px;
+ width: 300px;
+ font-size: 14px;
+ position: absolute;
+ top: 10px;
+ left:  750px;
+ padding-bottom: 5px;
 }
 
 #map {
 
-  border: 2px solid black;
+ border: 2px solid black;
 }
 
 .zwiedzany_zabytek2 {
-  background-color: red;
+ background-color: red;
 }
 
 .table-striped {
-  color: black;
-  //width: 800px;
+ color: black;
+ //width: 800px;
 }
+
+.plan_wycieczki {
+ margin: 10px;
+}
+
+.plan_wycieczki_tył {
+ //background-color: red;
+ padding: 10px;
+}
+
+
+.plan_wycieczki span{
+ font-weight: bolder;
+ color: red;
+ font-family: "Microsoft PhagsPa";
+ font-size:16px;
+
+}
+.table {
+ background-color: white;
+ width: 690px;
+ //margin-left: 9px;
+}
+
+table td {
+ border: none !important;
+}
+.table tr {
+ border: 2px solid saddlebrown;
+ cursor: move;
+ font-family: "Microsoft PhagsPa";
+ font-weight: bold;
+ counter-increment: rowNumber;
+}
+
+table tr td:first-child::before {
+ content: counter(rowNumber);
+ min-width: 1em;
+ margin-right: 0.5em;
+}
+
+
+.visited {
+ color: white;
+ background: green;
+ margin-left: 10px;
+}
+.visited span{
+ cursor:hand;
+}
+
+
+//.table-hover tbody tr:hover td,
+//.table-hover tbody tr:hover th {
+// background-color: sandybrown;
+//
+//}
+
+//.list-group-item {
+// width: 50%;
+//cursor: pointer;
+// margin-left: 9px;
+// }
+//
+//.list-group-item:hover {
+// background-color: sandybrown;
+//}
+//
+//ul li input[type='checkbox'] {
+// margin-left: 20px;
+//}
+

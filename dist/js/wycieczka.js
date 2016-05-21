@@ -1,56 +1,40 @@
-/**
- * Created by Konrad on 2016-04-26.
- */
-//$(document).ready(function () {
-//    $('.zwiedzany_zabytek1').hide();
-//    $('.zwiedzany_zabytek2').hide();
-//    $('.zwiedzany_zabytek3').hide();
-//    $('.zwiedzany_zabytek4').hide();
-//    $('.zwiedzany_zabytek5').hide();
-//    $('.zwiedzany_zabytek6').hide();
-//});
-//
-//$(document).ready(function () {
-//  $('.btn.btn-success').click(function () {
-//      $('.zwiedzany_zabytek2').show();
-//  })
-//});
+var touristApp = angular.module("touristApp", ['ui.sortable']);
 
-//angular mvc dla planu wycieczki
-
-var app = angular.module("app");
-
-//var model = {monuments:
-//    [{name: "Żuraw"},
-//    {name: "Stocznia Gdańska"},
-//    {name: "Dwór Artusa"},
-//    {name: "Fontanna Neptuna"},
-//    {name: "Gdański Dworzec"},
-//    {name: "Bazylika Mariacka"}]};
-//touristApp.controller("touristCtrl", function ($scope) {
-//    $scope.todo = model;
-//});
 
 var monuments = [
-    {id: 'marker', name: "Stocznia Gdańska"},
-    {id: 'marker1', name: "Żuraw"},
-    {id: 'marker2', name: "Dwór Artusa"},
-    {id: 'marker3', name: "Gdański Dworzec"},
-    {id: 'marker4', name: "Bazylika Mariacka"},
-    {id: 'marker5', name: "Fontanna Neptuna"}
+    {id: 'marker', name: "Stocznia Gdańska", street: "ul. Nabrzeże 5a"},
+    {id: 'marker1', name: "Żuraw", street: "ul. Witosa 33"},
+    {id: 'marker2', name: "Dwór Artusa", street: "ul. Długa 12"},
+    {id: 'marker3', name: "Gdański Dworzec", street: "ul. Grunwaldzka 2"},
+    {id: 'marker4', name: "Bazylika Mariacka", street: "ul. Piwna 41"},
+    {id: 'marker5', name: "Fontanna Neptuna", street: "ul. Długa 19"}
 ];
 
-app.controller("touristCtrl", function ($scope) {
+touristApp.controller("touristCtrl", function ($scope) {
     $scope.monuments = [];
 
     $scope.dodajZabytek = function (zabytekId) {
-        var filteredList = monuments.filter(function (item) {
-            return item.id == zabytekId;
-        })
+        var filteredList = monuments.filter(function (monument) {
+            return monument.id == zabytekId;
+        });
+        if( filteredList.length > 0 ){
+            var exists = $scope.monuments.filter(function (monument) {
+                return monument.id == zabytekId;
 
-        if (filteredList.length > 0) {
-            $scope.monuments.push(filteredList[0]);
+            });
+            console.log(exists);
+            if( exists.length == 0 ) {
+                $scope.monuments.push(filteredList[0]);
+            }
         }
-    }
+    };
 
+    $scope.usunZabytki = function () {
+        $scope.monuments.length = 0;
+    };
+
+    $scope.usunZabytek = function (monument) {
+        var index = $scope.monuments.indexOf(monument);
+        $scope.monuments.splice(index, 1);
+    }
 });

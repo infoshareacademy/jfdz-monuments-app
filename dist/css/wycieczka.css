@@ -23,3 +23,42 @@
 .table-striped {
     color: black;
 }
+
+.plan_wycieczki {
+  margin: 10px; }
+
+.plan_wycieczki_tył {
+  padding: 10px; }
+
+.plan_wycieczki span {
+  font-weight: bolder;
+  color: red;
+  font-family: "Microsoft PhagsPa";
+  font-size: 16px; }
+
+.table {
+  background-color: white;
+  width: 690px; }
+
+table td {
+  border: none !important; }
+
+.table tr {
+  border: 2px solid saddlebrown;
+  cursor: move;
+  font-family: "Microsoft PhagsPa";
+  font-weight: bold;
+  counter-increment: rowNumber; }
+
+table tr td:first-child::before {
+  content: counter(rowNumber);
+  min-width: 1em;
+  margin-right: 0.5em; }
+
+.visited {
+  color: white;
+  background: green;
+  margin-left: 10px; }
+
+.visited span {
+  cursor: hand; }
