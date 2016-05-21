@@ -18,7 +18,7 @@
 
 //angular mvc dla planu wycieczki
 
-var app= angular.module("app");
+var app = angular.module("app");
 
 //var model = {monuments:
 //    [{name: "Żuraw"},
@@ -32,7 +32,7 @@ var app= angular.module("app");
 //});
 
 var monuments = [
-    {id: 'marker',  name: "Stocznia Gdańska"},
+    {id: 'marker', name: "Stocznia Gdańska"},
     {id: 'marker1', name: "Żuraw"},
     {id: 'marker2', name: "Dwór Artusa"},
     {id: 'marker3', name: "Gdański Dworzec"},

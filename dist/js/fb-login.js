@@ -1,4 +1,3 @@
-
 function statusChangeCallback(response) {
     if (response.status === 'connected') {
 

@@ -1,19 +1,25 @@
 .zabytek {
-  background-color: sandybrown;
-  color: black;
-  border: 3px dotted black;
-  height: 300px;
-  width: 300px;
-  font-size: 10px;
-  position: absolute;
-  top: 10px;
-  left: 750px; }
+    /*background-image: url('../_img/back_dk.jpg');*/
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #a27854;
+    height: 73%;
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    left: 584px;
+}
 
 #map {
-  border: 2px solid black; }
+    border: 2px solid black;
+    top: 14px;
+}
 
 .zwiedzany_zabytek2 {
-  background-color: red; }
+    background-color: red;
+}
 
 .table-striped {
-  color: black; }
+    color: black;
+}

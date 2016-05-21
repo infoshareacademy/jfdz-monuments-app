@@ -1,9 +1,7 @@
-
-
 /*LOGGED IN USER NAME*/
-#userName   {
+#userName {
     position: relative;
-    display:block;
+    display: block;
     font-size: 15px;
-    top:15px;
+    top: 15px;
 }

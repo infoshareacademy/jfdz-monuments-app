@@ -8,16 +8,17 @@ body {
     font-family: 'Exo 2', sans-serif;
     color: #a27854;
 }
+
 #about {
     background-image: url("../_img/back_dk.jpg");
-    border: solid 2px #a27854 ;
+    border: solid 2px #a27854;
 }
-
 
 #naww {
     background-image: url("../_img/back_dk.jpg");
     border: solid 1px #a27854;
 }
+
 .navbar-fixed-top .nav {
     padding: 15px 0;
     font-family: 'Exo 2', sans-serif;
@@ -36,10 +37,11 @@ body {
 
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     body {
         padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
+
     .navbar-fixed-top .navbar-brand {
         padding: 15px 0;
     }
@@ -48,14 +50,14 @@ body {
 .lewa {
     height: 550px;
     background-image: url("../_img/back_dk.jpg");
-    border: solid 2px #a27854 ;
+    border: solid 2px #a27854;
     border-right: none;
 }
 
 .prawa {
     height: 550px;
     background-image: url("../_img/back_dk.jpg");
-    border: solid 2px #a27854 ;
+    border: solid 2px #a27854;
 }
 
 .clear {
@@ -70,12 +72,9 @@ body {
 .api {
     background-image: url("../_img/back_dk.jpg");
     height: 603px;
-    border: solid 2px #a27854 ;
+    border: solid 2px #a27854;
     border-top: none;
 }
-
-
-
 
 #lozaapp {
     font-size: 50px;
@@ -89,13 +88,12 @@ body {
     bottom: 85px;
     text-decoration: none;
 
-
 }
 
 #footer {
     background-image: url("../_img/back_dk.jpg");
     height: 200px;
-    border: solid 2px #a27854 ;
+    border: solid 2px #a27854;
     border-top: none;
 
 }
