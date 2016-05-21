@@ -7,21 +7,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
     <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="../app/assets/js/search.js"></script>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col" ng-controller="UsersController">
-            <h2>Zabytki</h2>
-            <div class="list-group">
-                <div class="list-group-item" ng-repeat="user in users">
-                    <h3>Nazwa: {{user.name}} <small>Numer: {{user.id}}</small></h3>
-                    <h4>Opis: {{user.description}}</h4>
-                </div>
-            </div>
-        </div>
+
+
+<div class="form-group" ng-controller="UsersController">
+    <label for=>Select list:</label>
+    <select class="form-control" ng-model="selectedMonumentId">
+        <option ng-repeat="zabytek in zabytki" value="{{zabytek.id}}">{{zabytek.name}}</option>
+    </select>
+
+    <h2>Opis zabytkow</h2>
+        <div id="description">{{selectedMonument.description}}</div>
     </div>
 </div>
+
+
+
+
 
 </body>
 </html>

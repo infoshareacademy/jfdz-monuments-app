@@ -1,7 +1,6 @@
 {
   "name": "jfdz-monuments-app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -25,5 +24,7 @@
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
