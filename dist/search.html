@@ -1,19 +1,19 @@
-<!DOCTYPE html>
-<html ng-app="app">
+<!--<!DOCTYPE html>-->
+<!--<html ng-app="app">-->
 
 
-<head>
-    <title>Seerch Monuments</title>
-    <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-    <script src="../node_modules/angular/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
+<!--<head>-->
+    <!--<title>Seerch Monuments</title>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <!--<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>-->
+    <!--<script src="../node_modules/angular/angular.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>-->
 
-    <script src="../app/assets/js/search.js"></script>
-    <script src="../app/assets/js/convert_csv_json.js"></script>
-</head>
+    <!--<script src="../app/assets/js/search.js"></script>-->
+    <!--<script src="../app/assets/js/convert_csv_json.js"></script>-->
+<!--</head>-->
 <body>
 
 
@@ -25,7 +25,7 @@
 
     <h2>LISTA</h2>
     <div ng-repeat="zabytek in zabytki[selectedCategory]">
-        {{zabytek}}
+        {{zabytek.OPIS}} / {{zabytek.ADRES}}
     </div>
 </div>
 
