@@ -17,17 +17,23 @@
     <!-- Custom CSS -->
     <link href="css/app.css" rel="stylesheet">
 
-        <!--&lt;!&ndash;<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>&ndash;&gt;-->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>-->
 
-        <!--&lt;!&ndash;<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>&ndash;&gt;-->
+        <!--<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>-->
         <!--<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
-        <!--&lt;!&ndash;<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>&ndash;&gt;-->
-        <!--<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />-->
-        <!--<script src="../node_modules/angular/angular.min.js"></script>-->
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+        <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+        <script src="js/jquery.js"></script>
+        <script src="../node_modules/angular/angular.min.js"></script>
         <script src="../src/js/test.js"></script>
         <script src="js/search.js"></script>
-
+         <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
         <script src="../node_modules/angular/angular.min.js"></script>
+        <script src="./data/convert_csv_json.js"></script>
+    <script src="./js/wycieczka.js"></script>
+    <script src="./js/map.js"></script>
+
     <![endif]-->
     <!--fonty-->
     <link href='https://fonts.googleapis.com/css?family=Marcellus+SC' rel='stylesheet' type='text/css'>
@@ -37,6 +43,7 @@
     <link href='https://fonts.googleapis.com/css?family=Exo+2:400,900italic,900,800italic,800,700,700italic,600italic,600,500italic,500,400italic,300italic,200italic,300,200,100italic,100'
           rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/wycieczka.css">
 </head>
 
 <body>
@@ -91,8 +98,10 @@
     <!-- Page Content -->
 
         <div class="row" id="services">
-            <div class="col-md-7  lewa">MAPA Z PINEZKAMI</div>
-            <div class="col-md-5  prawa">OPIS ZABYTKÓW PO KLIKNIĘCIU PINEZKI</div>
+            <div class="col-md-12  lewa" ng-include="'./wycieczka.html'">
+
+            </div>
+            <!--<div class="col-md-5  prawa" ng-include="'./zabytki.html'"></div>-->
         </div>
         <div class="api row" id="contact">
             <div class="col-md-12 down">
@@ -108,12 +117,15 @@
                 </div>
             </div>
             </div>
-
+<!--footer-->
     <footer class="row" id="footer">
         footer
 
     </footer>
 </div>
+        <!-- jQuery -->
+
+
         <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
