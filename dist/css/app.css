@@ -14,6 +14,7 @@ body {
 }
 
 
+
 #naww {
     background-image: url("../_img/back_dk.jpg");
     border: solid 1px #a27854;
@@ -97,6 +98,48 @@ body {
     height: 200px;
     border: solid 2px #a27854 ;
     border-top: none;
+
     /*width: 1170px;*/
 
+}
+
+.karuzela_img {
+    /*width:800px;*/
+    height:650px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 200;
+    font-size: 22px;
+    color: white;
+}
+
+.karuzela {
+    background-image: url("../_img/back_dk.jpg");
+    border: solid 2px #a27854 ;
+}
+
+.media  {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+footer {
+    background-color: black;
+    background-image: url("../images/back.jpg");
+    width: auto;
+    height: 650px;
+    margin: auto;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #a27854;
+    letter-spacing: 3px;
+    text-align: center;
+    border: solid;
+    border-color: #a27854;
+    border-width: 2px;
 }
