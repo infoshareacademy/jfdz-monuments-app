@@ -1,14 +1,4 @@
-//$tło: red;
-//
-//
-//body {
-// color: $tło;
-//
-//}
 
-#zabytki {
- //display: none;
-}
 .zabytek {
  background-color: lightgray;
  color: brown;
@@ -26,7 +16,6 @@
 }
 
 #map {
-
  border: 2px solid black;
 }
 
@@ -49,7 +38,7 @@
 }
 
 
-.plan_wycieczki span{
+.plan_wycieczki span {
  font-weight: bolder;
  color: red;
  font-family: "Microsoft PhagsPa";
@@ -85,7 +74,7 @@ table tr td:first-child::before {
  background: green;
  margin-left: 10px;
 }
-.visited span{
+.visited span {
  cursor:hand;
 }
 
