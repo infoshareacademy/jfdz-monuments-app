@@ -71,10 +71,14 @@ body {
 
 .api {
     background-image: url("../_img/back_dk.jpg");
-    height: 603px;
+    min-height: 403px;
     border: solid 2px #a27854;
     border-top: none;
     color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 20px;
 }
 
 #lozaapp {
@@ -110,11 +114,7 @@ body {
     color: white;
 }
 #nav_api {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 16px;
-    font-weight: 200;
-    color: white;
-    padding: 20px;
+
     /*min-height: 600px;*/
 }
 .karuzela {
