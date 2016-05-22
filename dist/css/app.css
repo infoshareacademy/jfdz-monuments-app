@@ -1,6 +1,6 @@
 
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    padding-top: 70px;
     background-image: url("../_img/panorama_2.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -47,18 +47,13 @@ body {
     }
 }
 
-.lewa {
+.mapa {
     min-height: 550px;
     background-image: url("../_img/back_dk.jpg");
     border: solid 2px #a27854;
     border-right: none;
-}
+    }
 
-.prawa {
-    height: 550px;
-    /*background-image: url("../_img/back_dk.jpg");*/
-    border: solid 2px #a27854;
-}
 
 .clear {
     clear: both;
@@ -71,7 +66,7 @@ body {
 
 .api {
     background-image: url("../_img/back_dk.jpg");
-    min-height: 403px;
+    min-height: 300px;
     border: solid 2px #a27854;
     border-top: none;
     color: white;
@@ -95,31 +90,20 @@ body {
 
 }
 
-#footer {
-    background-image: url("../_img/back_dk.jpg");
-    height: 200px;
-    border: solid 2px #a27854;
-    border-top: none;
 
-    /*width: 1170px;*/
-
-}
 
 .karuzela_img {
-    /*width:800px;*/
     height: 650px;
     font-family: 'Exo 2', sans-serif;
     font-weight: 200;
     font-size: 22px;
     color: white;
 }
-#nav_api {
 
-    /*min-height: 600px;*/
-}
 .karuzela {
     background-image: url("../_img/back_dk.jpg");
     border: solid 2px #a27854;
+    border-bottom: none;
 }
 
 .media {
@@ -134,18 +118,19 @@ body {
 }
 
 footer {
-    background-color: black;
-    background-image: url("../images/back.jpg");
+    background-image: url("../_img/back_dk.jpg");
     width: auto;
-    height: 650px;
+    height: 200px;
     margin: auto;
     font-family: 'Exo 2', sans-serif;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 300;
     color: #a27854;
     letter-spacing: 3px;
     text-align: center;
     border: solid;
     border-color: #a27854;
     border-width: 2px;
+    border-top: none;
+
 }

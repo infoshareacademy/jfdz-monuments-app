@@ -1,6 +1,5 @@
 @charset "UTF-8";
 .zabytek {
-  background-image: url("../_img/back_dk.jpg");
   border: 1px solid #a27854;
   padding-left: 3ch;
   padding-right: 3ch;
@@ -8,7 +7,7 @@
   height: 350px;
   width: 300px;
   position: absolute;
-  top: 10px;
+  top: 15px;
   left: 780px;
   padding-bottom: 5px;
   display: none;
@@ -28,7 +27,8 @@
   font-family: 'Exo 2', sans-serif;
   font-size: 16px;
   font-weight: 200;
-  color: #a27854; }
+  color: white;
+  padding-top: 20px; }
 
 .plan_wycieczki_tył {
   padding: 10px; }
@@ -36,8 +36,9 @@
 .plan_wycieczki span {
   font-family: 'Exo 2', sans-serif;
   font-size: 16px;
-  font-weight: 200;
-  color: #a27854; }
+  font-weight: 300;
+  color: white;
+  top: 10px; }
 
 .table {
   background-color: white;
