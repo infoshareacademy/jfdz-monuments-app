@@ -8,10 +8,6 @@ var marker3;
 var marker4;
 var marker5;
 
-$(document).ready(function () {
-    $('div.zabytek').hide();
-});
-
 function init_map(){var myOptions = {
     zoom:13,center:new google.maps.LatLng(54.3496712,18.646688499999982),
     mapTypeId: google.maps.MapTypeId.ROADMAP};
