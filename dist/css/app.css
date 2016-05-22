@@ -22,7 +22,7 @@ body {
 .navbar-fixed-top .nav {
     padding: 15px 0;
     font-family: 'Exo 2', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 22px;
     color: white;
     position: static;
@@ -39,7 +39,7 @@ body {
 
 @media (min-width: 768px) {
     body {
-        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+        padding-top: 100px;
     }
 
     .navbar-fixed-top .navbar-brand {
