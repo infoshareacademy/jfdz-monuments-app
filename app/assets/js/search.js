@@ -1,4 +1,4 @@
-var app = angular.module('app', ['touristApp']);
+var app = angular.module('app', ['anchorApp','touristApp']);
 
 app.controller('UsersController', ['$scope', '$http', function ($scope, $http) {
     $scope.zabytki = {};
