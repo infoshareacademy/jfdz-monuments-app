@@ -48,7 +48,7 @@ body {
 }
 
 .lewa {
-    height: 550px;
+    min-height: 550px;
     background-image: url("../_img/back_dk.jpg");
     border: solid 2px #a27854;
     border-right: none;
