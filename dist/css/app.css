@@ -74,6 +74,7 @@ body {
     height: 603px;
     border: solid 2px #a27854;
     border-top: none;
+    color: white;
 }
 
 #lozaapp {
@@ -112,9 +113,9 @@ body {
     font-family: 'Exo 2', sans-serif;
     font-size: 16px;
     font-weight: 200;
-    color: #a27854;
-
-
+    color: white;
+    padding: 20px;
+    /*min-height: 600px;*/
 }
 .karuzela {
     background-image: url("../_img/back_dk.jpg");

@@ -5,7 +5,6 @@ app.controller('UsersController', ['$scope', '$http', function ($scope, $http) {
     $http.get('../dist/data/zabytki_2.csv').success(function (data) {
         $scope.kategorieZabytkow = [
             {title: 'Kościoły', searchString: 'kościół'},
-            {title: 'Spichlerze', searchString: 'spichlerz'},
             {title: 'Pałace', searchString: 'pałac'},
             {title: 'Stocznie', searchString: 'stoczn'},
             {title: 'Bramy', searchString: 'brama'},

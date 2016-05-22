@@ -18,12 +18,11 @@
 
 
 <div class="form-group" ng-controller="UsersController">
-    <label for=>Select list:</label>
+    <label style="color: #a27854;">Wyszukaj po kategorii:</label>
     <select class="form-control" ng-model="selectedCategory">
         <option ng-repeat="kategoria in kategorieZabytkow" value="{{$index}}">{{kategoria.title}}</option>
     </select>
 
-    <h2>LISTA</h2>
     <div ng-repeat="zabytek in zabytki[selectedCategory]">
         {{zabytek.OPIS}} / {{zabytek.ADRES}}
     </div>
