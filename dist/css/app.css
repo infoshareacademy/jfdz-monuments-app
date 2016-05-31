@@ -1,0 +1,137 @@
+
+body {
+    padding-top: 70px;
+    background-image: url("../_img/panorama_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    font-family: 'Exo 2', sans-serif;
+    color: #a27854;
+}
+
+#about {
+    background-image: url("../_img/back_dk.jpg");
+    border: solid 2px #a27854;
+}
+
+#naww {
+    background-image: url("../_img/back_dk.jpg");
+    border: solid 1px #a27854;
+}
+
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: white;
+    position: static;
+    bottom: 53px;
+    right: 50px;
+    float: right;
+    margin-right: 27px;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 100px;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 15px 0;
+    }
+}
+
+.mapa {
+    min-height: 550px;
+    background-image: url("../_img/back_dk.jpg");
+    border: solid 2px #a27854;
+    border-right: none;
+    }
+
+
+.clear {
+    clear: both;
+}
+
+.header {
+    height: 400px;
+    background-color: #c1e2b3;
+}
+
+.api {
+    background-image: url("../_img/back_dk.jpg");
+    min-height: 300px;
+    border: solid 2px #a27854;
+    border-top: none;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px;
+
+}
+
+#lozaapp {
+    font-size: 50px;
+    color: #a27854;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    letter-spacing: 3px;
+    left: 281px;
+    bottom: 85px;
+    text-decoration: none;
+
+}
+
+
+
+.karuzela_img {
+    height: 650px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 200;
+    font-size: 22px;
+    color: white;
+}
+
+.karuzela {
+    background-image: url("../_img/back_dk.jpg");
+    border: solid 2px #a27854;
+    border-bottom: none;
+}
+
+.media {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+footer {
+    background-image: url("../_img/back_dk.jpg");
+    width: auto;
+    height: 200px;
+    margin: auto;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #a27854;
+    letter-spacing: 3px;
+    text-align: center;
+    border: solid;
+    border-color: #a27854;
+    border-width: 2px;
+    border-top: none;
+
+}

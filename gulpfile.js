@@ -10,7 +10,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var jade = require('gulp-jade');
 
 
-gulp.task('templates', function() {
+gulp.task('templates', function () {
     gulp.src('./src/jade/*.jade')
         .pipe(jade({
             pretty: true,

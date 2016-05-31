@@ -1,76 +1,72 @@
-$tło: black;
 
-
-body {
- color: $tło;
-
-}
-
-#zabytki {
- //display: none;
-}
 .zabytek {
- background-color: lightgray;
- color: brown;
- border: 3px solid gray;
+ border: 1px solid #a27854;
  padding-left: 3ch;
  padding-right: 3ch;
  box-shadow: 6px 15px 32px 0px rgba(0,0,0,0.9);
  height: 350px;
  width: 300px;
- font-size: 14px;
  position: absolute;
- top: 10px;
- left:  750px;
+ top: 15px;
+ left:  780px;
  padding-bottom: 5px;
+ display: none;
+ font-family: 'Exo 2', sans-serif;
+ font-size: 16px;
+ font-weight: 300;
+ color: white;
+
 }
 
 #map {
-
  border: 2px solid black;
 }
 
-.zwiedzany_zabytek2 {
- background-color: red;
-}
 
 .table-striped {
  color: black;
- //width: 800px;
+
 }
 
 .plan_wycieczki {
  margin: 10px;
+ font-family: 'Exo 2', sans-serif;
+ font-size: 16px;
+ //font-weight: 300;
+ color: white;
+ padding-top: 20px;
 }
 
 .plan_wycieczki_tył {
- //background-color: red;
  padding: 10px;
 }
 
 
-.plan_wycieczki span{
- font-weight: bolder;
- color: red;
- font-family: "Microsoft PhagsPa";
- font-size:16px;
-
+.plan_wycieczki span {
+ font-family: 'Exo 2', sans-serif;
+ font-size: 16px;
+ font-weight: 400;
+ color: white;
+ padding-top: 10px;
 }
+
 .table {
  background-color: white;
  width: 690px;
- //margin-left: 9px;
 }
 
 table td {
  border: none !important;
-}
+ }
+
 .table tr {
  border: 2px solid saddlebrown;
  cursor: move;
- font-family: "Microsoft PhagsPa";
- font-weight: bold;
  counter-increment: rowNumber;
+ font-family: 'Exo 2', sans-serif;
+ font-size: 16px;
+ font-weight: 300;
+ color: #a27854;
 }
 
 table tr td:first-child::before {
@@ -82,11 +78,13 @@ table tr td:first-child::before {
 
 .visited {
  color: white;
- background: green;
+ background: mediumseagreen;
  margin-left: 10px;
 }
-.visited span{
+.visited span {
  cursor:hand;
 }
-
+.tresc {
+ color: white;
+}
 

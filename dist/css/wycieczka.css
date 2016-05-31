@@ -1,2 +1,72 @@
-body {
-  color: green; }
+@charset "UTF-8";
+.zabytek {
+  border: 1px solid #a27854;
+  padding-left: 3ch;
+  padding-right: 3ch;
+  box-shadow: 6px 15px 32px 0px rgba(0, 0, 0, 0.9);
+  height: 350px;
+  width: 300px;
+  position: absolute;
+  top: 15px;
+  left: 780px;
+  padding-bottom: 5px;
+  display: none;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: white; }
+
+#map {
+  border: 2px solid black; }
+
+.table-striped {
+  color: black; }
+
+.plan_wycieczki {
+  margin: 10px;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  color: white;
+  padding-top: 20px; }
+
+.plan_wycieczki_tył {
+  padding: 10px; }
+
+.plan_wycieczki span {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  padding-top: 10px; }
+
+.table {
+  background-color: white;
+  width: 690px; }
+
+table td {
+  border: none !important; }
+
+.table tr {
+  border: 2px solid saddlebrown;
+  cursor: move;
+  counter-increment: rowNumber;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #a27854; }
+
+table tr td:first-child::before {
+  content: counter(rowNumber);
+  min-width: 1em;
+  margin-right: 0.5em; }
+
+.visited {
+  color: white;
+  background: mediumseagreen;
+  margin-left: 10px; }
+
+.visited span {
+  cursor: hand; }
+
+.tresc {
+  color: white; }

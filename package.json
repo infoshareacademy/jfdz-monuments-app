@@ -1,7 +1,6 @@
 {
   "name": "jfdz-monuments-app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,11 +17,14 @@
   },
   "homepage": "https://github.com/infoshareacademy/jfdz-monuments-app#readme",
   "dependencies": {
-    "angular": "^1.5.3",
+    "angular": "^1.5.5",
+    "angular-ui-sortable": "^0.14.0",
     "bootstrap-sass": "^3.3.6",
     "gulp": "^3.9.1",
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
